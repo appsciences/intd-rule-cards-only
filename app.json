@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "a",
+    "description": "An empty new project",
+    "slug": "temp",
+    "privacy": "public",
+    "sdkVersion": "18.0.0",
+    "version": "0.0.6",
+    "orientation": "portrait",
+    "primaryColor": "#cccccc",
+    "icon": "./assets/icons/app.png",
+    "loading": {
+      "icon": "./assets/icons/loading.png",
+      "hideExponentText": false
+    },
+    "packagerOpts": {
+      "assetExts": ["ttf", "mp4"]
+    },
+    "ios": {
+      "bundleIdentifier": "com.whateverthemood.itsnotthatdeep",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.whateverthemood.itsnotthatdeep",
+      "permissions":[],
+      "versionCode":"2"
+    }
+  }
+}
