@@ -2,23 +2,48 @@ import React, {
   Component
 } from 'react';
 import PropTypes from 'prop-types'
-import {Text, View} from 'react-native';
+import { Text, View } from 'react-native';
 
 import styles from '../styles/styles'
+import HiCardView from './CardViews/HiCardView'
+import HowCardView from './CardViews/HowCardView'
+import PlayCardView from './CardViews/PlayCardView'
 
 export default class Rule extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+    }
+  }
+  renderCardView = () => {
+    switch (this.props.header) {
+      case 'How to play':
+        return (
+          <HiCardView />
+        )
+      case 'qqq qq qqq':
+        return (
+          <HowCardView />
+        )
+      case 'qqq qq qqqq':
+        return (
+          <PlayCardView />
+        )
+      default:
+        return (
+          null
+        )
+    }
+  }
 
   render() {
-    let {
-      children,
-      heder,
-    } = this.props;
+    let { header } = this.props;
     return (
       <View
         style={styles.container}>
-        <Text style={styles.heading}>{heder}</Text>
+        <Text style={styles.heading}>{header}</Text>
         <View style={styles.card}>
-          {children}
+          {this.renderCardView()}
         </View>
       </View>
     )
@@ -26,12 +51,11 @@ export default class Rule extends Component {
 }
 
 Rule.propTypes = {
-  children: PropTypes.object,
   style: PropTypes.oneOfType([
     PropTypes.array,
     PropTypes.object,
   ]),
-  heder: PropTypes.string,
+  header: PropTypes.string,
 }
 
 Rule.defaultProps = {}

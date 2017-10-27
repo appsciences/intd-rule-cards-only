@@ -65,19 +65,19 @@ export default class RuleContainer extends React.Component {
   }
 
   renderRulesHi = () => (
-    <Rule key="rule-1" heder="hi">
-
+    <Rule key="rule-1" header="How to play">
+      
     </Rule>
   )
 
   renderRulesHow = () => (
-    <Rule key="rule-2" heder="hi">
+    <Rule key="rule-2" header="qqq qq qqq">
 
     </Rule>
   )
 
   renderRulesPlay = () => (
-    <Rule key="rule-3" heder="hi">
+    <Rule key="rule-3" header="qqq qq qqqq">
 
     </Rule>
   )

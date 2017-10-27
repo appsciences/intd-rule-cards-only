@@ -6,6 +6,53 @@ import {StyleSheet} from 'react-native';
 
 
 export default StyleSheet.create({
+  viewStyle: {
+   flex: 1,
+   justifyContent: 'center',
+   alignItems: 'center'
+  },
+  howView: {
+    flex: 1,
+    justifyContent: 'space-between',
+    alignItems: 'center'
+  },
+  iconView: {
+    flex: 3,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  heartView: {
+    flexDirection: 'row'
+  },
+  unHearView: {
+    flexDirection: 'row'
+  },
+  shuffleView: {
+    flexDirection: 'row'
+  },
+  warningView: {
+    flexDirection: 'row'
+  },
+  allImageView: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  directionIconView: {
+    flex: 3,
+    flexDirection: 'row',
+  },
+  twoIconView: {
+    flex: 3,
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'center'
+  },
+  twoTextView: {
+    flex: 2,
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    alignItems: 'center'
+  },
   backgroundImage: {
     flex: 1,
     width: undefined,
@@ -39,6 +86,31 @@ export default StyleSheet.create({
     marginBottom: 16,
     fontFamily: 'Quicksand-Regular',
     textAlign: 'center'
+  },
+  emptyView: {
+    flex: 1
+  },
+  orTextView: {
+    flex: 2,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  topTextView: {
+    flex: 4
+  },
+  colorTextView: {
+    flexDirection: 'row',
+    width: '90%'
+  },
+  realColorTextView: {
+    flexDirection: 'row',
+    marginLeft: 10
+  },
+  nonColorText: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    width: '90%'
   },
   rulesTextNoMargin: {
     color: "black",
