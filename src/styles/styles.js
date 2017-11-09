@@ -2,14 +2,14 @@
  * Created by idiot on 5/8/17.
  */
 
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
 
 export default StyleSheet.create({
   viewStyle: {
-   flex: 1,
-   justifyContent: 'center',
-   alignItems: 'center'
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   howView: {
     flex: 1,
@@ -76,7 +76,7 @@ export default StyleSheet.create({
   },
   cardText: {
     color: "black",
-    fontSize: 18,
+    fontSize: 20,
     fontFamily: 'Quicksand-Regular',
     textAlign: 'center'
   },
@@ -128,7 +128,7 @@ export default StyleSheet.create({
   card: {
     backgroundColor: 'white',
     width: 280,
-    height: 300,
+    height: 400,
     paddingTop: 25,
     paddingBottom: 25,
     justifyContent: 'center',
@@ -136,7 +136,7 @@ export default StyleSheet.create({
     paddingLeft: 25,
     paddingRight: 25,
     borderRadius: 6,
-    shadowOffset: {width: -0.5, height: 0.5},
+    shadowOffset: { width: -0.5, height: 0.5 },
     shadowColor: 'black',
     shadowOpacity: 0.85,
     shadowRadius: 1
@@ -151,6 +151,29 @@ export default StyleSheet.create({
   },
   textDisabled: {
     color: "#b3bac6",
+  },
+  exploreView: {
+    flex: 1,
+    justifyContent: 'space-between',
+    width: '100%'
+  },
+  bottomIonsView: {
+    width: '100%',
+    flexDirection: 'row',
+  },
+  expTxtView: {
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  txtView: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  expTextView: {
+    fontSize: 30,
+    fontFamily: 'Quicksand-Bold',
+    textAlign: 'center'
   }
 
 })

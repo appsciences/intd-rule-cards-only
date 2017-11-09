@@ -21,6 +21,7 @@ const PAGES = [
   1,
   2,
   3,
+  4,
 ];
 
 export default class RuleContainer extends React.Component {
@@ -36,7 +37,6 @@ export default class RuleContainer extends React.Component {
     }
   }
 
-
   state = {
     index: 0,
   };
@@ -45,23 +45,12 @@ export default class RuleContainer extends React.Component {
     switch (data) {
       case 1: return this.renderRulesHi()
       case 2: return this.renderRulesHow()
+      case 3: return this.renderRulesExplore()
       default: return this.renderRulesPlay()
     }
   }
 
   _onChangePage = (page) => {
-  }
-
-  render() {
-    return (
-      <ViewPager
-        style={this.props.style}
-        dataSource={this.state.dataSource}
-        renderPage={this._renderPage}
-        onChangePage={this._onChangePage}
-        isLoop={false}
-        autoPlay={false}/>
-    )
   }
 
   renderRulesHi = () => (
@@ -81,6 +70,10 @@ export default class RuleContainer extends React.Component {
 
     </Rule>
   )
+  renderRulesExplore = () => (
+    <Rule key="rule-4" header="">
+    </Rule>
+  )
 
   action = () => {
     if (this.props.category) {
@@ -88,6 +81,17 @@ export default class RuleContainer extends React.Component {
     } else {
       this.props.onShowTC(true)
     }
+  }
+  render() {
+    return (
+      <ViewPager
+        style={this.props.style}
+        dataSource={this.state.dataSource}
+        renderPage={this._renderPage}
+        onChangePage={this._onChangePage}
+        isLoop={false}
+        autoPlay={false}/>
+    )
   }
 }
 

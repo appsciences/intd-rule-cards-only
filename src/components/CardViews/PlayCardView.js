@@ -17,29 +17,29 @@ export default class PlayCardView extends Component {
     return (
       <View style={styles.viewStyle}>
         <View style={styles.textView}>
-          <Text style={styles.cardText}>Qqq qqqq qqqq qq</Text>
-          <Text style={styles.cardText}>qqqqq qq:</Text>
+          <Text style={styles.cardText}>You also have the</Text>
+          <Text style={styles.cardText}>option to:</Text>
         </View>
         <View style={styles.iconView}>
           <View style={styles.heartView}>
-            <Text style={styles.cardText}>Qqq  </Text>
+            <Text style={styles.cardText}>Tap  </Text>
             <Image source={require('../../../assets/icons/HEART_STROKE.png')} />
-            <Text style={styles.cardText}>qq qqqq.</Text>
+            <Text style={styles.cardText}> to like.</Text>
           </View>
           <View style={styles.unHearView}>
-            <Text style={styles.cardText}>Qqq</Text>
+            <Text style={styles.cardText}>Tap</Text>
             <Image source={require('../../../assets/icons/UNHEAR.png')} />
-            <Text style={styles.cardText}>qq qqqqq.</Text>
+            <Text style={styles.cardText}>to dislike.</Text>
           </View>
           <View style={styles.shuffleView}>
-            <Text style={styles.cardText}>Qqq</Text>
+            <Text style={styles.cardText}>Tap</Text>
             <Image source={require('../../../assets/icons/SHUFFLE.png')} />
-            <Text style={styles.cardText}>qq qqqqq.</Text>
+            <Text style={styles.cardText}> to shuffle.</Text>
           </View>
           <View style={styles.warningView}>
-            <Text style={styles.cardText}>Qqq</Text>
+            <Text style={styles.cardText}>Tap</Text>
             <Image source={require('../../../assets/icons/HEART_STROKE.png')} />
-            <Text style={styles.cardText}>qqq qqqqq qqq.</Text>
+            <Text style={styles.cardText}> for more inofo.</Text>
           </View>
         </View>
       </View>
