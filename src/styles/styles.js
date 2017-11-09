@@ -76,7 +76,7 @@ export default StyleSheet.create({
   },
   cardText: {
     color: "black",
-    fontSize: 20,
+    fontSize: 25,
     fontFamily: 'Quicksand-Regular',
     textAlign: 'center'
   },
@@ -91,6 +91,11 @@ export default StyleSheet.create({
     flex: 1
   },
   orTextView: {
+    flex: 2,
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
+  textView: {
     flex: 2,
     justifyContent: 'center',
     alignItems: 'center'

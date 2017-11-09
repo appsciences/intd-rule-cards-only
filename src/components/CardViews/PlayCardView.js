@@ -39,7 +39,7 @@ export default class PlayCardView extends Component {
           <View style={styles.warningView}>
             <Text style={styles.cardText}>Tap</Text>
             <Image source={require('../../../assets/icons/HEART_STROKE.png')} />
-            <Text style={styles.cardText}> for more inofo.</Text>
+            <Text style={styles.cardText}> for more info.</Text>
           </View>
         </View>
       </View>
