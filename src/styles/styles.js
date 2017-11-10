@@ -36,6 +36,11 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center'
   },
+  skipView: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
   warningView: {
     flexDirection: 'row',
     justifyContent: 'center',
@@ -93,6 +98,11 @@ export default StyleSheet.create({
     fontSize: 16,
     fontFamily: 'Quicksand-Regular',
     textAlign: 'center'
+  },
+  smallTextView: {
+   justifyContent: 'flex-end',
+   alignItems: 'center',
+   height: 26
   },
   rulesText: {
     color: "black",

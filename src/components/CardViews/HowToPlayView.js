@@ -31,10 +31,14 @@ export default class HowToPlayView extends Component {
                         <Text style={styles.cardText}> to loathe.</Text>
                     </View>
                     <View style={styles.shuffleView}>
-                        <Text style={styles.cardText}>Tap </Text>
-                        <Image source={require('../../../assets/icons/skip-howtoplay.png')} />
-                        <Text style={styles.cardText}> to skip.</Text>
-                        <Text style={styles.smallText}>(up to 3x).</Text>
+                        <View style={styles.skipView}>
+                            <Text style={styles.cardText}>Tap </Text>
+                            <Image source={require('../../../assets/icons/skip-howtoplay.png')} />
+                            <Text style={styles.cardText}> to skip </Text>
+                        </View>
+                        <View style={styles.smallTextView}>
+                            <Text style={styles.smallText}>(up to 3x).</Text>
+                        </View>
                     </View>
                     <View style={styles.warningView}>
                         <Text style={styles.cardText}>Tap </Text>
