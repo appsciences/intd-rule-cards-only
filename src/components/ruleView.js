@@ -9,6 +9,7 @@ import HiCardView from './CardViews/HiCardView'
 import HowCardView from './CardViews/HowCardView'
 import PlayCardView from './CardViews/PlayCardView'
 import ExploreView from './CardViews/ExploreView'
+import HowToPlayView from './CardViews/HowToPlayView'
 
 export default class Rule extends Component {
   constructor(props) {
@@ -29,6 +30,10 @@ export default class Rule extends Component {
       case 'qqq qq qqqq':
         return (
           <PlayCardView />
+        )
+      case 'how to play':
+        return (
+          <HowToPlayView />
         )
       case '':
         return (

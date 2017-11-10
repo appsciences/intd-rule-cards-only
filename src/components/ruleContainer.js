@@ -22,6 +22,7 @@ const PAGES = [
   2,
   3,
   4,
+  5,
 ];
 
 export default class RuleContainer extends React.Component {
@@ -46,6 +47,7 @@ export default class RuleContainer extends React.Component {
       case 1: return this.renderRulesHi()
       case 2: return this.renderRulesHow()
       case 3: return this.renderRulesExplore()
+      case 4: return this.renderRulesHowToPlay()
       default: return this.renderRulesPlay()
     }
   }
@@ -72,6 +74,10 @@ export default class RuleContainer extends React.Component {
   )
   renderRulesExplore = () => (
     <Rule key="rule-4" header="">
+    </Rule>
+  )
+  renderRulesHowToPlay = () => (
+    <Rule key="rule-5" header="how to play">
     </Rule>
   )
 

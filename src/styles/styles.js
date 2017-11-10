@@ -22,16 +22,24 @@ export default StyleSheet.create({
     alignItems: 'center'
   },
   heartView: {
-    flexDirection: 'row'
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   unHearView: {
-    flexDirection: 'row'
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   shuffleView: {
-    flexDirection: 'row'
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   warningView: {
-    flexDirection: 'row'
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   allImageView: {
     justifyContent: 'center',
@@ -77,6 +85,12 @@ export default StyleSheet.create({
   cardText: {
     color: "black",
     fontSize: 25,
+    fontFamily: 'Quicksand-Regular',
+    textAlign: 'center'
+  },
+  smallText: {
+    color: "black",
+    fontSize: 16,
     fontFamily: 'Quicksand-Regular',
     textAlign: 'center'
   },
